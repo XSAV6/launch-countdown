@@ -1,0 +1,32 @@
+.CountdownItem {
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--dark-desaturated-blue);
+    color: var(--soft-red);
+    border-radius: 10px;
+    font-size: 90px;
+    box-shadow: 0 15px 0px var(--vv-dark-blue);
+}
+
+.CountdownItemCont {
+    display: flex;
+    flex-direction: column;
+}
+
+.type {
+    color: var(--grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+    .CountdownItem {
+        font-size: 40px;
+        padding: 15px;
+        margin: 5px;
+    }
+    .type {
+        font-size: 8px;
+        margin-top: 10px;
+    }
+}

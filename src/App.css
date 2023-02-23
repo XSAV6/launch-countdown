@@ -1,38 +1,84 @@
 .App {
-  text-align: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+    background-image: url("../public/images/bg-stars.svg");
+    background-color: var(--very-dark-blue);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.firstSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title {
+    text-transform: uppercase;
+    color: var(--white);
+    letter-spacing: 10px;
+    font-size: 24px;
+    margin: 0;
+    padding: 24px;
+    margin-bottom: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.centered {
+    align-self: center;
+    justify-self: center;
+    /* flex: 1; */
+    /* vertical-align: middle; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+    background-image: url("../public/images/pattern-hills.svg");
+    max-width: 100vw;
+    width: 100vw;
+    margin-bottom: 0;
+    background-repeat: repeat-x;
+    min-height: 200px;
+    height: 200px;
+    /* position: absolute; */
+    bottom: 0;
+    /* display: flex; */
+}
+/* 
+.footer:before {
+    content: url("../public/images/pattern-hills.svg");
+} */
+
+.smLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* flex: 1; */
+    height: 200px;
+}
+
+.mdlIcon {
+    margin: 0 50px;
+}
+
+@media screen and (max-width: 1000px) {
+    .title {
+        font-size: 20px;
+        letter-spacing: 7px;
+    }
+}
+
+.smLink:hover {
+    color: var(--soft-red);
+    cursor: pointer;
 }
