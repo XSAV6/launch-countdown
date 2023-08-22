@@ -1,3 +1,5 @@
+NOTE: you will see the countdown at 0 because the target date was set in march 2023. So it's already passed. If you want it to work just change the target date in "Countdown.js" to your desired target date and it should work just fine.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
